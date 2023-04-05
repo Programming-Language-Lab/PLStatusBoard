@@ -1,9 +1,14 @@
 @file:Suppress("UnstableApiUsage")
 
+import java.util.Properties
+
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
 }
+
+val properties = Properties()
+properties.load(project.rootProject.file("local.properties").inputStream())
 
 android {
     namespace = "com.pl.data"
@@ -15,6 +20,7 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
+        buildConfigField("String", "webhookUrl", properties.getProperty("webhook.url"))
     }
 
     buildTypes {
