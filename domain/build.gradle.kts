@@ -13,4 +13,5 @@ dependencies {
     val ktorVersion = "2.2.4"
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.0")
     implementation("io.ktor:ktor-serialization-kotlinx-json:$ktorVersion")
+    implementation("javax.inject:javax.inject:1")
 }
