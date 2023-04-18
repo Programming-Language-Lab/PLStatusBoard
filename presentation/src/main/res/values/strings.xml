@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">PLStatusBoard</string>
+
+    <string name="jihoon">지훈</string>
+    <string name="goeun">고은</string>
+    <string name="dojin">도진</string>
+    <string name="hyunsoo">현수</string>
+    <string name="haesung">혜성</string>
+    <string name="juyeon">주연</string>
+    <string name="changwoo">창우</string>
+    <string name="yoojin">유진</string>
+
 </resources>
