@@ -1,6 +1,11 @@
 package com.pl.presentation
 
 import android.view.View
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.LifecycleOwner
+import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.repeatOnLifecycle
+import kotlinx.coroutines.launch
 
 data class Rectangle(val x1: Float, val y1: Float, val x2: Float, val y2: Float) {
     fun checkOverlap(other: Rectangle): Boolean {
@@ -38,4 +43,12 @@ fun View.getAbsolutePositionOnScreen(): Pair<Float, Float> {
     val location = IntArray(2)
     getLocationOnScreen(location)
     return Pair(location[0].toFloat(), location[1].toFloat())
+}
+
+fun LifecycleOwner.repeatWhenUiStarted(block: suspend () -> Unit) {
+    lifecycleScope.launch {
+        repeatOnLifecycle(Lifecycle.State.STARTED) {
+            block.invoke()
+        }
+    }
 }
