@@ -1,13 +1,21 @@
 <resources>
     <string name="app_name">PLStatusBoard</string>
 
-    <string name="jihoon">지훈</string>
+    <!-- 멤버 -->
+    <string name="jihoonOck">지훈(옥)</string>
     <string name="goeun">고은</string>
     <string name="dojin">도진</string>
+    <string name="jihoonLee">지훈(이)</string>
     <string name="hyunsoo">현수</string>
     <string name="haesung">혜성</string>
     <string name="juyeon">주연</string>
     <string name="changwoo">창우</string>
     <string name="yoojin">유진</string>
+
+    <!-- 상태 -->
+    <string name="status_in">재실</string>
+    <string name="status_out">외출</string>
+    <string name="status_class">수업</string>
+    <string name="status_home">귀가</string>
 
 </resources>
