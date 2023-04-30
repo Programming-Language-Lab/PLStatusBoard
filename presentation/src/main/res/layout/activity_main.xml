@@ -6,4 +6,342 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <com.pl.presentation.custom.CharacterView
+        android:id="@+id/jihoon_ock_character_view"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/jihoon_ock"
+        android:translationZ="1dp"
+        android:layout_marginTop="120dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/goeun_character_view"
+        app:characterName="@string/jihoonOck"/>
+
+    <TextView
+        android:text="@string/jihoonOck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/jihoon_ock_character_view"
+        app:layout_constraintTop_toBottomOf="@id/jihoon_ock_character_view"/>
+
+    <TextView
+        android:id="@+id/jihoon_ock_state"
+        android:text="@string/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@id/jihoon_ock_character_view"
+        app:layout_constraintTop_toBottomOf="@id/jihoon_ock_character_view"/>
+
+    <com.pl.presentation.custom.CharacterView
+        android:id="@+id/goeun_character_view"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/goeun"
+        android:translationZ="1dp"
+        android:layout_marginTop="120dp"
+        app:layout_constraintStart_toStartOf="@id/jihoon_ock_character_view"
+        app:layout_constraintEnd_toEndOf="@id/dojin_character_view"
+        app:layout_constraintTop_toTopOf="parent"
+        app:characterName="@string/goeun"/>
+
+    <TextView
+        android:text="@string/goeun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/goeun_character_view"
+        app:layout_constraintTop_toBottomOf="@id/goeun_character_view"/>
+
+    <TextView
+        android:id="@+id/goeun_state"
+        android:text="@string/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@id/goeun_character_view"
+        app:layout_constraintTop_toBottomOf="@id/goeun_character_view"/>
+
+    <com.pl.presentation.custom.CharacterView
+        android:id="@+id/dojin_character_view"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/dojin"
+        android:translationZ="1dp"
+        android:layout_marginTop="120dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/goeun_character_view"
+        app:characterName="@string/dojin"/>
+
+    <TextView
+        android:text="@string/dojin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/dojin_character_view"
+        app:layout_constraintTop_toBottomOf="@id/dojin_character_view"/>
+
+    <TextView
+        android:id="@+id/dojin_state"
+        android:text="@string/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@id/dojin_character_view"
+        app:layout_constraintTop_toBottomOf="@id/dojin_character_view"/>
+
+
+    <com.pl.presentation.custom.CharacterView
+        android:id="@+id/jihoon_lee_character_view"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="136dp"
+        android:src="@drawable/jihoon_lee"
+        android:translationZ="1dp"
+        app:characterName="@string/jihoonLee"
+        app:layout_constraintEnd_toStartOf="@id/hyunsoo_character_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/jihoon_ock_state" />
+
+    <TextView
+        android:text="@string/jihoonLee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/jihoon_lee_character_view"
+        app:layout_constraintTop_toBottomOf="@id/jihoon_lee_character_view"/>
+
+    <TextView
+        android:id="@+id/jihoon_lee_state"
+        android:text="@string/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@id/jihoon_lee_character_view"
+        app:layout_constraintTop_toBottomOf="@id/jihoon_lee_character_view"/>
+
+    <com.pl.presentation.custom.CharacterView
+        android:id="@+id/hyunsoo_character_view"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/hyunsoo"
+        android:translationZ="1dp"
+        android:layout_marginTop="120dp"
+        app:layout_constraintStart_toStartOf="@id/jihoon_lee_character_view"
+        app:layout_constraintEnd_toEndOf="@id/dojin_character_view"
+        app:layout_constraintTop_toBottomOf="@id/jihoon_ock_state"
+        app:characterName="@string/hyunsoo"/>
+
+    <TextView
+        android:text="@string/hyunsoo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/hyunsoo_character_view"
+        app:layout_constraintTop_toBottomOf="@id/hyunsoo_character_view"/>
+
+    <TextView
+        android:id="@+id/hyunsoo_state"
+        android:text="@string/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@id/hyunsoo_character_view"
+        app:layout_constraintTop_toBottomOf="@id/hyunsoo_character_view"/>
+
+    <com.pl.presentation.custom.CharacterView
+        android:id="@+id/haesung_character_view"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/haesung"
+        android:translationZ="1dp"
+        android:layout_marginTop="120dp"
+        app:layout_constraintTop_toBottomOf="@id/jihoon_ock_state"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/hyunsoo_character_view"
+        app:characterName="@string/haesung"/>
+
+    <TextView
+        android:text="@string/haesung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/haesung_character_view"
+        app:layout_constraintTop_toBottomOf="@id/haesung_character_view"/>
+
+    <TextView
+        android:id="@+id/haesung_state"
+        android:text="@string/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@id/haesung_character_view"
+        app:layout_constraintTop_toBottomOf="@id/haesung_character_view"/>
+
+    <com.pl.presentation.custom.CharacterView
+        android:id="@+id/juyeon_character_view"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/juyeon"
+        android:translationZ="1dp"
+        android:layout_marginTop="120dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/jihoon_lee_state"
+        app:layout_constraintEnd_toStartOf="@id/changwoo_character_view"
+        app:characterName="@string/juyeon"/>
+
+    <TextView
+        android:text="@string/juyeon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/juyeon_character_view"
+        app:layout_constraintTop_toBottomOf="@id/juyeon_character_view"/>
+
+    <TextView
+        android:id="@+id/juyeon_state"
+        android:text="@string/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@id/juyeon_character_view"
+        app:layout_constraintTop_toBottomOf="@id/juyeon_character_view"/>
+
+    <com.pl.presentation.custom.CharacterView
+        android:id="@+id/changwoo_character_view"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/changwoo"
+        android:translationZ="1dp"
+        android:layout_marginTop="120dp"
+        app:layout_constraintStart_toStartOf="@id/jihoon_lee_character_view"
+        app:layout_constraintEnd_toEndOf="@id/dojin_character_view"
+        app:layout_constraintTop_toBottomOf="@id/jihoon_lee_state"
+        app:characterName="@string/changwoo"/>
+
+    <TextView
+        android:text="@string/changwoo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/changwoo_character_view"
+        app:layout_constraintTop_toBottomOf="@id/changwoo_character_view"/>
+
+    <TextView
+        android:id="@+id/changwoo_state"
+        android:text="@string/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@id/changwoo_character_view"
+        app:layout_constraintTop_toBottomOf="@id/changwoo_character_view"/>
+
+    <com.pl.presentation.custom.CharacterView
+        android:id="@+id/yoojin_character_view"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/yoojin"
+        android:translationZ="1dp"
+        android:layout_marginTop="120dp"
+        app:layout_constraintTop_toBottomOf="@id/jihoon_lee_state"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/changwoo_character_view"
+        app:characterName="@string/yoojin"/>
+
+    <TextView
+        android:text="@string/yoojin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/yoojin_character_view"
+        app:layout_constraintTop_toBottomOf="@id/yoojin_character_view"/>
+
+    <TextView
+        android:id="@+id/yoojin_state"
+        android:text="@string/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@id/yoojin_character_view"
+        app:layout_constraintTop_toBottomOf="@id/yoojin_character_view"/>
+
+
+    <LinearLayout
+        android:id="@+id/status_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:text="@string/status_in"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"/>
+        <TextView
+            android:text="@string/status_out"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"/>
+        <TextView
+            android:text="@string/status_class"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"/>
+        <TextView
+            android:text="@string/status_home"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
