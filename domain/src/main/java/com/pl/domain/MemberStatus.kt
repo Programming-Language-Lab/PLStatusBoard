@@ -6,5 +6,11 @@ enum class MemberStatus(val text: String) {
     OUT("외출"),
     CLASS("수업"),
     HOME("귀가"),
-    ERROR("에러"),
+    ERROR("에러");
+
+    companion object {
+        fun toEnum(text: String): MemberStatus {
+            return MemberStatus.values().find { it.text == text } ?: ERROR
+        }
+    }
 }

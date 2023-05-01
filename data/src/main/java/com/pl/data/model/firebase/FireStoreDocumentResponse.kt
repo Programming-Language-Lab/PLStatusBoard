@@ -15,7 +15,7 @@ data class FireStoreDocumentResponse<DocumentResponse: FieldsResponse>(
         val castedFields = (fields as? FireStoreMembersFields) ?: return MemberState.error()
         return MemberState(
             name = castedFields.name.stringValue,
-            status = MemberStatus.values().find { it.text == castedFields.status.stringValue } ?: MemberStatus.ERROR,
+            status = MemberStatus.toEnum(castedFields.status.stringValue),
         )
     }
 }
