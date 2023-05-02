@@ -8,4 +8,6 @@ interface StatusBoardClient {
     suspend fun getMemberState(name: String): MemberState
 
     fun getMemberStateFlow(name: String): Flow<MemberState>
+
+    suspend fun setMemberState(memberState: MemberState)
 }

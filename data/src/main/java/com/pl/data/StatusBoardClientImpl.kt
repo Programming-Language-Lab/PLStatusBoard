@@ -6,6 +6,7 @@ import com.google.firebase.ktx.Firebase
 import com.pl.data.model.firebase.FireStoreDocumentResponse
 import com.pl.data.model.firebase.FireStoreMembersFields
 import com.pl.data.model.firebase.MemberStateResponse
+import com.pl.domain.MemberInfo
 import com.pl.domain.MemberState
 import com.pl.domain.StatusBoardClient
 import com.pl.domain.WebHookMessage
@@ -18,7 +19,8 @@ import io.ktor.http.*
 import io.ktor.serialization.kotlinx.json.*
 import kotlinx.coroutines.flow.map
 
-class StatusBoardClientImpl: StatusBoardClient {
+
+class StatusBoardClientImpl : StatusBoardClient {
 
     private val client = HttpClient(CIO) {
         install(ContentNegotiation) {
@@ -43,16 +45,24 @@ class StatusBoardClientImpl: StatusBoardClient {
 
     override fun getMemberStateFlow(name: String) =
         Firebase.firestore.collection(DATA_BASE_NAME)
-        .document(name)
-        .snapshots()
+            .document(name)
+            .snapshots()
             .map {
-                it.toObject(MemberStateResponse::class.java)?.toMemberState() ?: MemberState.error()
+                it.toObject(MemberStateResponse::class.java)?.toMemberState()
+                    ?.copy(MemberInfo.findKoreanByEnglish(name)) ?: MemberState.error()
             }
+
+    override suspend fun setMemberState(memberState: MemberState) {
+        Firebase.firestore.collection(DATA_BASE_NAME)
+            .document(MemberInfo.findEnglishByKorean(memberState.name))
+            .set(MemberStateResponse(memberState.name, memberState.status.text))
+    }
 
     companion object {
         private const val FIRE_STORE_END_POINT = "https://firestore.googleapis.com/v1"
         private const val PROJECT_ID = "plstatusboard"
         private const val DATA_BASE_NAME = "Members"
-        private const val FIRE_STORE_BASE_URL = "$FIRE_STORE_END_POINT/projects/$PROJECT_ID/databases/(default)/documents/$DATA_BASE_NAME"
+        private const val FIRE_STORE_BASE_URL =
+            "$FIRE_STORE_END_POINT/projects/$PROJECT_ID/databases/(default)/documents/$DATA_BASE_NAME"
     }
 }
