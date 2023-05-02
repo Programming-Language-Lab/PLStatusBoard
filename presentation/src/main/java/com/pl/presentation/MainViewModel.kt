@@ -71,8 +71,10 @@ class MainViewModel @Inject constructor(
         get() = _yoojin
 
     fun postWebhookMessage(memberState: MemberState) {
-        viewModelScope.launch {
-            postWebhookUseCase.invoke(WebHookMessage("*${memberState.name}* 은/는 *${memberState.status.text}*"))
+        if (memberState.status != MemberStatus.INIT) {
+            viewModelScope.launch {
+                postWebhookUseCase.invoke(WebHookMessage("*${memberState.name}* 은/는 *${memberState.status.text}*"))
+            }
         }
     }
 
