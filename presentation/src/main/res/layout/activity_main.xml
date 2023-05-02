@@ -107,7 +107,7 @@
         android:id="@+id/jihoon_lee_character_view"
         android:layout_width="180dp"
         android:layout_height="180dp"
-        android:layout_marginTop="136dp"
+        android:layout_marginTop="120dp"
         android:src="@drawable/jihoon_lee"
         android:translationZ="1dp"
         app:characterName="@string/jihoonLee"

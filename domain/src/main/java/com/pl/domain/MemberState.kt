@@ -6,5 +6,6 @@ data class MemberState(
 ) {
     companion object {
         fun init(name: String) = MemberState(name, MemberStatus.INIT)
+        fun error() = MemberState("error", MemberStatus.ERROR)
     }
 }
