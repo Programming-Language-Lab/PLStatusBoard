@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.TextView
 import androidx.activity.viewModels
 import androidx.core.view.children
+import com.pl.domain.MemberState
 import com.pl.domain.MemberStatus
 import com.pl.presentation.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
@@ -57,14 +58,13 @@ class MainActivity : AppCompatActivity() {
                 setTargetViews(statusViews)
                 setOnSelectedListener { statusView ->
                     if (statusView is TextView) {
-                        viewModel.setMemberState(
-                            characterView.characterName,
-                            MemberStatus.values().first { it.text == statusView.text })
+                        viewModel.postMemberState(
+                            MemberState(characterView.characterName,
+                                MemberStatus.values().first { it.text == statusView.text })
+                        )
                     }
-
                 }
             }
-
         }
     }
 

@@ -2,10 +2,13 @@ package com.pl.presentation
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.pl.domain.MemberInfo
 import com.pl.domain.MemberState
 import com.pl.domain.MemberStatus
 import com.pl.domain.WebHookMessage
+import com.pl.domain.usecase.GetMemberStateFlowUseCase
 import com.pl.domain.usecase.PostWebhookUseCase
+import com.pl.domain.usecase.SetMemberStateUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -14,8 +17,20 @@ import javax.inject.Inject
 
 @HiltViewModel
 class MainViewModel @Inject constructor(
-    private val postWebhookUseCase: PostWebhookUseCase
+    private val postWebhookUseCase: PostWebhookUseCase,
+    private val getMemberStateFlowUseCase: GetMemberStateFlowUseCase,
+    private val setMemberStateUseCase: SetMemberStateUseCase
 ) : ViewModel() {
+
+    init {
+        MemberInfo.allEnglish().forEach { memberName ->
+            viewModelScope.launch {
+                getMemberStateFlowUseCase.invoke(memberName).collect { memberState ->
+                    setMemberState(memberState)
+                }
+            }
+        }
+    }
 
     private var _jihoonOck: MutableStateFlow<MemberState> =
         MutableStateFlow(MemberState.init("옥지훈"))
@@ -61,19 +76,24 @@ class MainViewModel @Inject constructor(
         }
     }
 
-    fun setMemberState(memberName: String, memberStatus: MemberStatus) {
-        when (memberName) {
-            "옥지훈" -> setJihoonOckMemberState(memberStatus)
-            "고은" -> setGoeunMemberState(memberStatus)
-            "도진" -> setDojinMemberState(memberStatus)
-            "이지훈" -> setJihoonLeeMemberState(memberStatus)
-            "현수" -> setHyunsooMemberState(memberStatus)
-            "혜성" -> setHaesungMemberState(memberStatus)
-            "주연" -> setJuyeonMemberState(memberStatus)
-            "창우" -> setChangwooMemberState(memberStatus)
-            "유진" -> setYoojinMemberState(memberStatus)
+    fun postMemberState(newState: MemberState) {
+        viewModelScope.launch {
+            setMemberStateUseCase.invoke(newState)
         }
+    }
 
+    private fun setMemberState(memberState: MemberState) {
+        when (memberState.name) {
+            MemberInfo.JIHOON_OCK.ko -> setJihoonOckMemberState(memberState.status)
+            MemberInfo.GOEUN.ko -> setGoeunMemberState(memberState.status)
+            MemberInfo.DOJIN.ko -> setDojinMemberState(memberState.status)
+            MemberInfo.JIHOON_LEE.ko -> setJihoonLeeMemberState(memberState.status)
+            MemberInfo.HYUNSOO.ko -> setHyunsooMemberState(memberState.status)
+            MemberInfo.HAESUNG.ko -> setHaesungMemberState(memberState.status)
+            MemberInfo.JUYEON.ko -> setJuyeonMemberState(memberState.status)
+            MemberInfo.CHANGWOO.ko -> setChangwooMemberState(memberState.status)
+            MemberInfo.YOOJIN.ko -> setYoojinMemberState(memberState.status)
+        }
     }
 
     private fun setJihoonOckMemberState(memberStatus: MemberStatus) {
