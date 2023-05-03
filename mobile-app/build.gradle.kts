@@ -3,6 +3,8 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    kotlin("kapt")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -69,4 +71,11 @@ dependencies {
     
     implementation(project(":domain"))
     implementation(project(":data"))
+
+    implementation("com.google.dagger:hilt-android:2.45")
+    kapt("com.google.dagger:hilt-android-compiler:2.45")
+}
+
+kapt {
+    correctErrorTypes = true
 }
