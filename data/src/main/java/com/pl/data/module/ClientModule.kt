@@ -1,5 +1,6 @@
-package com.pl.data
+package com.pl.data.module
 
+import com.pl.data.StatusBoardClientImpl
 import com.pl.domain.StatusBoardClient
 import dagger.Module
 import dagger.Provides
