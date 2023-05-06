@@ -70,18 +70,17 @@ class MainViewModel @Inject constructor(
     val yoojin: StateFlow<MemberState>
         get() = _yoojin
 
-    fun postWebhookMessage(memberState: MemberState) {
-        if (memberState.status != MemberStatus.INIT) {
+    fun postMemberState(newState: MemberState) {
+        if (newState.status != MemberStatus.INIT) {
             viewModelScope.launch {
-                postWebhookUseCase.invoke(WebHookMessage("*${memberState.name}* 은/는 *${memberState.status.text}*"))
+                setMemberStateUseCase.invoke(newState).let { isNewState ->
+                    if (isNewState) {
+                        postWebhookUseCase.invoke(WebHookMessage("*${newState.name}* 은/는 *${newState.status.text}*"))
+                    }
+                }
             }
         }
-    }
 
-    fun postMemberState(newState: MemberState) {
-        viewModelScope.launch {
-            setMemberStateUseCase.invoke(newState)
-        }
     }
 
     private fun setMemberState(memberState: MemberState) {
