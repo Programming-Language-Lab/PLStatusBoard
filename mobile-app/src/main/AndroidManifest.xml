@@ -2,7 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
-        android:name=".App">
+        android:name=".App"
+        android:icon="@mipmap/mobile_icon"
+        android:roundIcon="@mipmap/mobile_icon_round">
         <activity
             android:name=".MainActivity"
             android:exported="true"
