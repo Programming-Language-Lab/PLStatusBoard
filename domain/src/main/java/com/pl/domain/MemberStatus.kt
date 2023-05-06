@@ -12,5 +12,9 @@ enum class MemberStatus(val text: String) {
         fun toEnum(text: String): MemberStatus {
             return MemberStatus.values().find { it.text == text } ?: ERROR
         }
+
+        fun allNormalStatus(): List<MemberStatus> {
+            return listOf(IN, OUT, CLASS, HOME)
+        }
     }
 }
