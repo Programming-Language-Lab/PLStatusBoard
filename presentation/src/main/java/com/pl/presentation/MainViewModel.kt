@@ -6,8 +6,10 @@ import com.pl.domain.MemberInfo
 import com.pl.domain.MemberState
 import com.pl.domain.MemberStatus
 import com.pl.domain.WebHookMessage
+import com.pl.domain.usecase.CheckDuplicatedMemberStateUseCase
 import com.pl.domain.usecase.GetMemberStateFlowUseCase
 import com.pl.domain.usecase.PostWebhookUseCase
+import com.pl.domain.usecase.SetMemberStateToCacheUseCase
 import com.pl.domain.usecase.SetMemberStateUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -19,13 +21,31 @@ import javax.inject.Inject
 class MainViewModel @Inject constructor(
     private val postWebhookUseCase: PostWebhookUseCase,
     private val getMemberStateFlowUseCase: GetMemberStateFlowUseCase,
-    private val setMemberStateUseCase: SetMemberStateUseCase
+    private val setMemberStateUseCase: SetMemberStateUseCase,
+    private val setMemberStateToCacheUseCase: SetMemberStateToCacheUseCase,
+    private val checkDuplicatedMemberStateUseCase: CheckDuplicatedMemberStateUseCase
 ) : ViewModel() {
 
     init {
         MemberInfo.allEnglish().forEach { memberName ->
             viewModelScope.launch {
                 getMemberStateFlowUseCase.invoke(memberName).collect { memberState ->
+                    checkDuplicatedMemberStateUseCase(memberState).let { isDuplicated ->
+                        if (isDuplicated.not()) {
+                            setMemberStateToCacheUseCase(memberState)
+                            postWebhookUseCase.invoke(
+                                WebHookMessage(
+                                    "*${
+                                        MemberInfo.findKoreanByEnglish(
+                                            memberName
+                                        )
+                                    }* 은/는 *${memberState.status.text}*"
+                                )
+                            )
+                        }
+                    }
+
+
                     setMemberState(memberState)
                 }
             }
@@ -73,14 +93,9 @@ class MainViewModel @Inject constructor(
     fun postMemberState(newState: MemberState) {
         if (newState.status != MemberStatus.INIT) {
             viewModelScope.launch {
-                setMemberStateUseCase.invoke(newState).let { isNewState ->
-                    if (isNewState) {
-                        postWebhookUseCase.invoke(WebHookMessage("*${newState.name}* 은/는 *${newState.status.text}*"))
-                    }
-                }
+                setMemberStateUseCase.invoke(newState)
             }
         }
-
     }
 
     private fun setMemberState(memberState: MemberState) {
