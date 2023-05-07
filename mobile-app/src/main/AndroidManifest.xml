@@ -2,11 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
-        android:name=".App">
+        android:name=".App"
+        android:icon="@mipmap/mobile_icon"
+        android:roundIcon="@mipmap/mobile_icon_round"
+        android:label="@string/app_name">
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="@string/title_activity_main"
             android:theme="@style/Theme.PLStatusBoard">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
