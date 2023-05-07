@@ -6,7 +6,7 @@ enum class MemberInfo(val ko: String, val en: String) {
     DOJIN("도진", "dojin"),
     JIHOON_LEE("이지훈", "jihoonLee"),
     HYUNSOO("현수", "hyunsoo"),
-    HAESUNG("해성", "haesung"),
+    HAESUNG("혜성", "haesung"),
     JUYEON("주연", "juyeon"),
     CHANGWOO("창우", "changwoo"),
     YOOJIN("유진", "yoojin");
