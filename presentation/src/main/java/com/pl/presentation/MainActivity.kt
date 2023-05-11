@@ -2,6 +2,7 @@ package com.pl.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.FrameLayout
 import android.widget.TextView
 import androidx.activity.viewModels
 import androidx.core.view.children
@@ -17,7 +18,9 @@ class MainActivity : AppCompatActivity() {
 
     private val viewModel by viewModels<MainViewModel>()
 
-    private val statusViews by lazy { binding.statusContainer.children }
+    private val statusViews by lazy { binding.statusContainer.children.map {
+        (it as FrameLayout).children.first() as TextView
+    } }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

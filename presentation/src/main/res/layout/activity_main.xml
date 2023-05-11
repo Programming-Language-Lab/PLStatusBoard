@@ -123,8 +123,8 @@
         android:text="@string/jihoonOck"
         android:textColor="@color/black"
         android:textSize="25sp"
-        app:layout_constraintStart_toStartOf="@id/jihoon_ock_character_view"
         app:layout_constraintEnd_toEndOf="@id/jihoon_ock_character_view"
+        app:layout_constraintStart_toStartOf="@id/jihoon_ock_character_view"
         app:layout_constraintTop_toBottomOf="@id/jihoon_ock_character_view" />
 
     <ImageView
@@ -132,10 +132,10 @@
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_marginStart="5dp"
-        app:layout_constraintStart_toEndOf="@id/jihoon_ock_name"
-        app:layout_constraintTop_toTopOf="@id/jihoon_ock_name"
+        android:contentDescription="@string/state_icon"
         app:layout_constraintBottom_toBottomOf="@id/jihoon_ock_name"
-        android:contentDescription="@string/state"/>
+        app:layout_constraintStart_toEndOf="@id/jihoon_ock_name"
+        app:layout_constraintTop_toTopOf="@id/jihoon_ock_name" />
 
 
     <com.pl.presentation.custom.CharacterView
@@ -155,10 +155,10 @@
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_marginStart="5dp"
-        app:layout_constraintStart_toEndOf="@id/goeun_name"
-        app:layout_constraintTop_toTopOf="@id/goeun_name"
+        android:contentDescription="@string/state_icon"
         app:layout_constraintBottom_toBottomOf="@id/goeun_name"
-        android:contentDescription="@string/state"/>
+        app:layout_constraintStart_toEndOf="@id/goeun_name"
+        app:layout_constraintTop_toTopOf="@id/goeun_name" />
 
     <TextView
         android:id="@+id/goeun_name"
@@ -167,8 +167,8 @@
         android:text="@string/goeun"
         android:textColor="@color/black"
         android:textSize="25sp"
-        app:layout_constraintStart_toStartOf="@id/goeun_character_view"
         app:layout_constraintEnd_toEndOf="@id/goeun_character_view"
+        app:layout_constraintStart_toStartOf="@id/goeun_character_view"
         app:layout_constraintTop_toBottomOf="@id/goeun_character_view" />
 
 
@@ -191,8 +191,8 @@
         android:text="@string/dojin"
         android:textColor="@color/black"
         android:textSize="25sp"
-        app:layout_constraintStart_toStartOf="@id/dojin_character_view"
         app:layout_constraintEnd_toEndOf="@id/dojin_character_view"
+        app:layout_constraintStart_toStartOf="@id/dojin_character_view"
         app:layout_constraintTop_toBottomOf="@id/dojin_character_view" />
 
     <ImageView
@@ -200,10 +200,10 @@
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_marginStart="5dp"
-        app:layout_constraintStart_toEndOf="@id/dojin_name"
-        app:layout_constraintTop_toTopOf="@id/dojin_name"
+        android:contentDescription="@string/state_icon"
         app:layout_constraintBottom_toBottomOf="@id/dojin_name"
-        android:contentDescription="@string/state"/>
+        app:layout_constraintStart_toEndOf="@id/dojin_name"
+        app:layout_constraintTop_toTopOf="@id/dojin_name" />
 
     <com.pl.presentation.custom.CharacterView
         android:id="@+id/jihoon_lee_character_view"
@@ -224,8 +224,8 @@
         android:text="@string/jihoonLee"
         android:textColor="@color/black"
         android:textSize="25sp"
-        app:layout_constraintStart_toStartOf="@id/jihoon_lee_character_view"
         app:layout_constraintEnd_toEndOf="@id/jihoon_lee_character_view"
+        app:layout_constraintStart_toStartOf="@id/jihoon_lee_character_view"
         app:layout_constraintTop_toBottomOf="@id/jihoon_lee_character_view" />
 
     <ImageView
@@ -233,10 +233,10 @@
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_marginStart="5dp"
-        app:layout_constraintStart_toEndOf="@id/jihoon_lee_name"
-        app:layout_constraintTop_toTopOf="@id/jihoon_lee_name"
+        android:contentDescription="@string/state_icon"
         app:layout_constraintBottom_toBottomOf="@id/jihoon_lee_name"
-        android:contentDescription="@string/state"/>
+        app:layout_constraintStart_toEndOf="@id/jihoon_lee_name"
+        app:layout_constraintTop_toTopOf="@id/jihoon_lee_name" />
 
 
     <com.pl.presentation.custom.CharacterView
@@ -258,8 +258,8 @@
         android:text="@string/hyunsoo"
         android:textColor="@color/black"
         android:textSize="25sp"
-        app:layout_constraintStart_toStartOf="@id/hyunsoo_character_view"
         app:layout_constraintEnd_toEndOf="@id/hyunsoo_character_view"
+        app:layout_constraintStart_toStartOf="@id/hyunsoo_character_view"
         app:layout_constraintTop_toBottomOf="@id/hyunsoo_character_view" />
 
     <ImageView
@@ -267,10 +267,10 @@
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_marginStart="5dp"
-        app:layout_constraintStart_toEndOf="@id/hyunsoo_name"
-        app:layout_constraintTop_toTopOf="@id/hyunsoo_name"
+        android:contentDescription="@string/state_icon"
         app:layout_constraintBottom_toBottomOf="@id/hyunsoo_name"
-        android:contentDescription="@string/state"/>
+        app:layout_constraintStart_toEndOf="@id/hyunsoo_name"
+        app:layout_constraintTop_toTopOf="@id/hyunsoo_name" />
 
     <com.pl.presentation.custom.CharacterView
         android:id="@+id/haesung_character_view"
@@ -291,8 +291,8 @@
         android:text="@string/haesung"
         android:textColor="@color/black"
         android:textSize="25sp"
-        app:layout_constraintStart_toStartOf="@id/haesung_character_view"
         app:layout_constraintEnd_toEndOf="@id/haesung_character_view"
+        app:layout_constraintStart_toStartOf="@id/haesung_character_view"
         app:layout_constraintTop_toBottomOf="@id/haesung_character_view" />
 
     <ImageView
@@ -300,10 +300,10 @@
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_marginStart="5dp"
-        app:layout_constraintStart_toEndOf="@id/haesung_name"
-        app:layout_constraintTop_toTopOf="@id/haesung_name"
+        android:contentDescription="@string/state_icon"
         app:layout_constraintBottom_toBottomOf="@id/haesung_name"
-        android:contentDescription="@string/state"/>
+        app:layout_constraintStart_toEndOf="@id/haesung_name"
+        app:layout_constraintTop_toTopOf="@id/haesung_name" />
 
 
     <com.pl.presentation.custom.CharacterView
@@ -325,8 +325,8 @@
         android:text="@string/juyeon"
         android:textColor="@color/black"
         android:textSize="25sp"
-        app:layout_constraintStart_toStartOf="@id/juyeon_character_view"
         app:layout_constraintEnd_toEndOf="@id/juyeon_character_view"
+        app:layout_constraintStart_toStartOf="@id/juyeon_character_view"
         app:layout_constraintTop_toBottomOf="@id/juyeon_character_view" />
 
     <ImageView
@@ -334,10 +334,10 @@
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_marginStart="5dp"
-        app:layout_constraintStart_toEndOf="@id/juyeon_name"
-        app:layout_constraintTop_toTopOf="@id/juyeon_name"
+        android:contentDescription="@string/state_icon"
         app:layout_constraintBottom_toBottomOf="@id/juyeon_name"
-        android:contentDescription="@string/state"/>
+        app:layout_constraintStart_toEndOf="@id/juyeon_name"
+        app:layout_constraintTop_toTopOf="@id/juyeon_name" />
 
     <com.pl.presentation.custom.CharacterView
         android:id="@+id/changwoo_character_view"
@@ -358,8 +358,8 @@
         android:text="@string/changwoo"
         android:textColor="@color/black"
         android:textSize="25sp"
-        app:layout_constraintStart_toStartOf="@id/changwoo_character_view"
         app:layout_constraintEnd_toEndOf="@id/changwoo_character_view"
+        app:layout_constraintStart_toStartOf="@id/changwoo_character_view"
         app:layout_constraintTop_toBottomOf="@id/changwoo_character_view" />
 
     <ImageView
@@ -367,10 +367,10 @@
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_marginStart="5dp"
-        app:layout_constraintStart_toEndOf="@id/changwoo_name"
-        app:layout_constraintTop_toTopOf="@id/changwoo_name"
+        android:contentDescription="@string/state_icon"
         app:layout_constraintBottom_toBottomOf="@id/changwoo_name"
-        android:contentDescription="@string/state"/>
+        app:layout_constraintStart_toEndOf="@id/changwoo_name"
+        app:layout_constraintTop_toTopOf="@id/changwoo_name" />
 
     <com.pl.presentation.custom.CharacterView
         android:id="@+id/yoojin_character_view"
@@ -391,8 +391,8 @@
         android:text="@string/yoojin"
         android:textColor="@color/black"
         android:textSize="25sp"
-        app:layout_constraintStart_toStartOf="@id/yoojin_character_view"
         app:layout_constraintEnd_toEndOf="@id/yoojin_character_view"
+        app:layout_constraintStart_toStartOf="@id/yoojin_character_view"
         app:layout_constraintTop_toBottomOf="@id/yoojin_character_view" />
 
     <ImageView
@@ -400,11 +400,10 @@
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_marginStart="5dp"
-        app:layout_constraintStart_toEndOf="@id/yoojin_name"
-        app:layout_constraintTop_toTopOf="@id/yoojin_name"
+        android:contentDescription="@string/state_icon"
         app:layout_constraintBottom_toBottomOf="@id/yoojin_name"
-        android:contentDescription="@string/state"/>
-
+        app:layout_constraintStart_toEndOf="@id/yoojin_name"
+        app:layout_constraintTop_toTopOf="@id/yoojin_name" />
     <!-- 캐릭터 뷰 -->
 
     <!-- 상태 뷰-->
@@ -412,50 +411,103 @@
         android:id="@+id/status_container"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:baselineAligned="false"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <TextView
+        <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="100dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="@string/status_in"
-            android:textColor="@color/black"
-            android:textSize="30sp"
-            android:textStyle="bold" />
+            android:layout_weight="1">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="100dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="@string/status_out"
-            android:textColor="@color/black"
-            android:textSize="30sp"
-            android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text="@string/status_in"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="100dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="@string/status_class"
-            android:textColor="@color/black"
-            android:textSize="30sp"
-            android:textStyle="bold" />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/state_icon"
+                android:src="@drawable/in_img" />
+        </FrameLayout>
 
-        <TextView
+        <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="100dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="@string/status_home"
-            android:textColor="@color/black"
-            android:textSize="30sp"
-            android:textStyle="bold" />
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text="@string/status_out"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/state_icon"
+                android:src="@drawable/out_img" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text="@string/status_class"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/state_icon"
+                android:src="@drawable/class_img" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text="@string/status_home"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/state_icon"
+                android:src="@drawable/home_img" />
+        </FrameLayout>
     </LinearLayout>
     <!-- 상태 뷰-->
 
