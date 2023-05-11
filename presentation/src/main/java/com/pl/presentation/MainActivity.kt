@@ -72,55 +72,55 @@ class MainActivity : AppCompatActivity() {
 
         repeatWhenUiStarted {
             viewModel.jihoonOck.collect {
-                binding.jihoonOckState.text = it.status.text
+                binding.jihoonOckState.setBackgroundResource(it.status.toResource())
             }
         }
 
         repeatWhenUiStarted {
             viewModel.goeun.collect {
-                binding.goeunState.text = it.status.text
+                binding.goeunState.setBackgroundResource(it.status.toResource())
             }
         }
 
         repeatWhenUiStarted {
             viewModel.dojin.collect {
-                binding.dojinState.text = it.status.text
+                binding.dojinState.setBackgroundResource(it.status.toResource())
             }
         }
 
         repeatWhenUiStarted {
             viewModel.jihoonLee.collect {
-                binding.jihoonLeeState.text = it.status.text
+                binding.jihoonLeeState.setBackgroundResource(it.status.toResource())
             }
         }
 
         repeatWhenUiStarted {
             viewModel.hyunsoo.collect {
-                binding.hyunsooState.text = it.status.text
+                binding.hyunsooState.setBackgroundResource(it.status.toResource())
             }
         }
 
         repeatWhenUiStarted {
             viewModel.haesung.collect {
-                binding.haesungState.text = it.status.text
+                binding.haesungState.setBackgroundResource(it.status.toResource())
             }
         }
 
         repeatWhenUiStarted {
             viewModel.juyeon.collect {
-                binding.juyeonState.text = it.status.text
+                binding.juyeonState.setBackgroundResource(it.status.toResource())
             }
         }
 
         repeatWhenUiStarted {
             viewModel.changwoo.collect {
-                binding.changwooState.text = it.status.text
+                binding.changwooState.setBackgroundResource(it.status.toResource())
             }
         }
 
         repeatWhenUiStarted {
             viewModel.yoojin.collect {
-                binding.yoojinState.text = it.status.text
+                binding.yoojinState.setBackgroundResource(it.status.toResource())
             }
         }
 

@@ -117,24 +117,26 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/jihoon_ock_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/jihoonOck"
         android:textColor="@color/black"
         android:textSize="25sp"
         app:layout_constraintStart_toStartOf="@id/jihoon_ock_character_view"
-        app:layout_constraintTop_toBottomOf="@id/jihoon_ock_character_view" />
-
-    <TextView
-        android:id="@+id/jihoon_ock_state"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/state"
-        android:textColor="@color/black"
-        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="@id/jihoon_ock_character_view"
         app:layout_constraintTop_toBottomOf="@id/jihoon_ock_character_view" />
+
+    <ImageView
+        android:id="@+id/jihoon_ock_state"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@id/jihoon_ock_name"
+        app:layout_constraintTop_toTopOf="@id/jihoon_ock_name"
+        app:layout_constraintBottom_toBottomOf="@id/jihoon_ock_name"
+        android:contentDescription="@string/state"/>
+
 
     <com.pl.presentation.custom.CharacterView
         android:id="@+id/goeun_character_view"
@@ -148,25 +150,27 @@
         app:layout_constraintStart_toStartOf="@id/jihoon_ock_character_view"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/goeun_state"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@id/goeun_name"
+        app:layout_constraintTop_toTopOf="@id/goeun_name"
+        app:layout_constraintBottom_toBottomOf="@id/goeun_name"
+        android:contentDescription="@string/state"/>
+
     <TextView
+        android:id="@+id/goeun_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/goeun"
         android:textColor="@color/black"
         android:textSize="25sp"
         app:layout_constraintStart_toStartOf="@id/goeun_character_view"
-        app:layout_constraintTop_toBottomOf="@id/goeun_character_view" />
-
-    <TextView
-        android:id="@+id/goeun_state"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/state"
-        android:textColor="@color/black"
-        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="@id/goeun_character_view"
         app:layout_constraintTop_toBottomOf="@id/goeun_character_view" />
+
 
     <com.pl.presentation.custom.CharacterView
         android:id="@+id/dojin_character_view"
@@ -181,25 +185,25 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/dojin_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/dojin"
         android:textColor="@color/black"
         android:textSize="25sp"
         app:layout_constraintStart_toStartOf="@id/dojin_character_view"
-        app:layout_constraintTop_toBottomOf="@id/dojin_character_view" />
-
-    <TextView
-        android:id="@+id/dojin_state"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/state"
-        android:textColor="@color/black"
-        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="@id/dojin_character_view"
         app:layout_constraintTop_toBottomOf="@id/dojin_character_view" />
 
+    <ImageView
+        android:id="@+id/dojin_state"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@id/dojin_name"
+        app:layout_constraintTop_toTopOf="@id/dojin_name"
+        app:layout_constraintBottom_toBottomOf="@id/dojin_name"
+        android:contentDescription="@string/state"/>
 
     <com.pl.presentation.custom.CharacterView
         android:id="@+id/jihoon_lee_character_view"
@@ -211,27 +215,29 @@
         app:characterName="@string/jihoonLee"
         app:layout_constraintEnd_toStartOf="@id/hyunsoo_character_view"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/jihoon_ock_state" />
+        app:layout_constraintTop_toBottomOf="@id/jihoon_ock_name" />
 
     <TextView
+        android:id="@+id/jihoon_lee_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/jihoonLee"
         android:textColor="@color/black"
         android:textSize="25sp"
         app:layout_constraintStart_toStartOf="@id/jihoon_lee_character_view"
-        app:layout_constraintTop_toBottomOf="@id/jihoon_lee_character_view" />
-
-    <TextView
-        android:id="@+id/jihoon_lee_state"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/state"
-        android:textColor="@color/black"
-        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="@id/jihoon_lee_character_view"
         app:layout_constraintTop_toBottomOf="@id/jihoon_lee_character_view" />
+
+    <ImageView
+        android:id="@+id/jihoon_lee_state"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@id/jihoon_lee_name"
+        app:layout_constraintTop_toTopOf="@id/jihoon_lee_name"
+        app:layout_constraintBottom_toBottomOf="@id/jihoon_lee_name"
+        android:contentDescription="@string/state"/>
+
 
     <com.pl.presentation.custom.CharacterView
         android:id="@+id/hyunsoo_character_view"
@@ -243,27 +249,28 @@
         app:characterName="@string/hyunsoo"
         app:layout_constraintEnd_toEndOf="@id/dojin_character_view"
         app:layout_constraintStart_toStartOf="@id/jihoon_lee_character_view"
-        app:layout_constraintTop_toBottomOf="@id/jihoon_ock_state" />
+        app:layout_constraintTop_toBottomOf="@id/jihoon_ock_name" />
 
     <TextView
+        android:id="@+id/hyunsoo_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hyunsoo"
         android:textColor="@color/black"
         android:textSize="25sp"
         app:layout_constraintStart_toStartOf="@id/hyunsoo_character_view"
-        app:layout_constraintTop_toBottomOf="@id/hyunsoo_character_view" />
-
-    <TextView
-        android:id="@+id/hyunsoo_state"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/state"
-        android:textColor="@color/black"
-        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="@id/hyunsoo_character_view"
         app:layout_constraintTop_toBottomOf="@id/hyunsoo_character_view" />
+
+    <ImageView
+        android:id="@+id/hyunsoo_state"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@id/hyunsoo_name"
+        app:layout_constraintTop_toTopOf="@id/hyunsoo_name"
+        app:layout_constraintBottom_toBottomOf="@id/hyunsoo_name"
+        android:contentDescription="@string/state"/>
 
     <com.pl.presentation.custom.CharacterView
         android:id="@+id/haesung_character_view"
@@ -275,27 +282,29 @@
         app:characterName="@string/haesung"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/hyunsoo_character_view"
-        app:layout_constraintTop_toBottomOf="@id/jihoon_ock_state" />
+        app:layout_constraintTop_toBottomOf="@id/jihoon_ock_name" />
 
     <TextView
+        android:id="@+id/haesung_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/haesung"
         android:textColor="@color/black"
         android:textSize="25sp"
         app:layout_constraintStart_toStartOf="@id/haesung_character_view"
-        app:layout_constraintTop_toBottomOf="@id/haesung_character_view" />
-
-    <TextView
-        android:id="@+id/haesung_state"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/state"
-        android:textColor="@color/black"
-        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="@id/haesung_character_view"
         app:layout_constraintTop_toBottomOf="@id/haesung_character_view" />
+
+    <ImageView
+        android:id="@+id/haesung_state"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@id/haesung_name"
+        app:layout_constraintTop_toTopOf="@id/haesung_name"
+        app:layout_constraintBottom_toBottomOf="@id/haesung_name"
+        android:contentDescription="@string/state"/>
+
 
     <com.pl.presentation.custom.CharacterView
         android:id="@+id/juyeon_character_view"
@@ -307,27 +316,28 @@
         app:characterName="@string/juyeon"
         app:layout_constraintEnd_toStartOf="@id/changwoo_character_view"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/jihoon_lee_state" />
+        app:layout_constraintTop_toBottomOf="@id/jihoon_lee_name" />
 
     <TextView
+        android:id="@+id/juyeon_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/juyeon"
         android:textColor="@color/black"
         android:textSize="25sp"
         app:layout_constraintStart_toStartOf="@id/juyeon_character_view"
-        app:layout_constraintTop_toBottomOf="@id/juyeon_character_view" />
-
-    <TextView
-        android:id="@+id/juyeon_state"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/state"
-        android:textColor="@color/black"
-        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="@id/juyeon_character_view"
         app:layout_constraintTop_toBottomOf="@id/juyeon_character_view" />
+
+    <ImageView
+        android:id="@+id/juyeon_state"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@id/juyeon_name"
+        app:layout_constraintTop_toTopOf="@id/juyeon_name"
+        app:layout_constraintBottom_toBottomOf="@id/juyeon_name"
+        android:contentDescription="@string/state"/>
 
     <com.pl.presentation.custom.CharacterView
         android:id="@+id/changwoo_character_view"
@@ -339,27 +349,28 @@
         app:characterName="@string/changwoo"
         app:layout_constraintEnd_toEndOf="@id/dojin_character_view"
         app:layout_constraintStart_toStartOf="@id/jihoon_lee_character_view"
-        app:layout_constraintTop_toBottomOf="@id/jihoon_lee_state" />
+        app:layout_constraintTop_toBottomOf="@id/jihoon_lee_name" />
 
     <TextView
+        android:id="@+id/changwoo_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/changwoo"
         android:textColor="@color/black"
         android:textSize="25sp"
         app:layout_constraintStart_toStartOf="@id/changwoo_character_view"
-        app:layout_constraintTop_toBottomOf="@id/changwoo_character_view" />
-
-    <TextView
-        android:id="@+id/changwoo_state"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/state"
-        android:textColor="@color/black"
-        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="@id/changwoo_character_view"
         app:layout_constraintTop_toBottomOf="@id/changwoo_character_view" />
+
+    <ImageView
+        android:id="@+id/changwoo_state"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@id/changwoo_name"
+        app:layout_constraintTop_toTopOf="@id/changwoo_name"
+        app:layout_constraintBottom_toBottomOf="@id/changwoo_name"
+        android:contentDescription="@string/state"/>
 
     <com.pl.presentation.custom.CharacterView
         android:id="@+id/yoojin_character_view"
@@ -371,27 +382,29 @@
         app:characterName="@string/yoojin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/changwoo_character_view"
-        app:layout_constraintTop_toBottomOf="@id/jihoon_lee_state" />
+        app:layout_constraintTop_toBottomOf="@id/jihoon_lee_name" />
 
     <TextView
+        android:id="@+id/yoojin_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/yoojin"
         android:textColor="@color/black"
         android:textSize="25sp"
         app:layout_constraintStart_toStartOf="@id/yoojin_character_view"
-        app:layout_constraintTop_toBottomOf="@id/yoojin_character_view" />
-
-    <TextView
-        android:id="@+id/yoojin_state"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/state"
-        android:textColor="@color/black"
-        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="@id/yoojin_character_view"
         app:layout_constraintTop_toBottomOf="@id/yoojin_character_view" />
+
+    <ImageView
+        android:id="@+id/yoojin_state"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@id/yoojin_name"
+        app:layout_constraintTop_toTopOf="@id/yoojin_name"
+        app:layout_constraintBottom_toBottomOf="@id/yoojin_name"
+        android:contentDescription="@string/state"/>
+
     <!-- 캐릭터 뷰 -->
 
     <!-- 상태 뷰-->
