@@ -18,6 +18,90 @@
         android:translationZ="-1dp"
         android:contentDescription="@string/background"/>
 
+    <!-- 플랫폼 뷰 -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/platform"
+        app:layout_constraintStart_toStartOf="@id/dojin_character_view"
+        app:layout_constraintEnd_toEndOf="@id/dojin_character_view"
+        app:layout_constraintBottom_toBottomOf="@id/dojin_character_view"
+        android:contentDescription="@string/platform"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/platform"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/goeun_character_view"
+        android:contentDescription="@string/platform"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/platform"
+        app:layout_constraintStart_toStartOf="@id/jihoon_ock_character_view"
+        app:layout_constraintEnd_toEndOf="@id/jihoon_ock_character_view"
+        app:layout_constraintBottom_toBottomOf="@id/jihoon_ock_character_view"
+        android:contentDescription="@string/platform"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/platform"
+        app:layout_constraintStart_toStartOf="@id/haesung_character_view"
+        app:layout_constraintEnd_toEndOf="@id/haesung_character_view"
+        app:layout_constraintBottom_toBottomOf="@id/haesung_character_view"
+        android:contentDescription="@string/platform"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/platform"
+        app:layout_constraintStart_toStartOf="@id/hyunsoo_character_view"
+        app:layout_constraintEnd_toEndOf="@id/hyunsoo_character_view"
+        app:layout_constraintBottom_toBottomOf="@id/hyunsoo_character_view"
+        android:contentDescription="@string/platform"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/platform"
+        app:layout_constraintStart_toStartOf="@id/jihoon_lee_character_view"
+        app:layout_constraintEnd_toEndOf="@id/jihoon_lee_character_view"
+        app:layout_constraintBottom_toBottomOf="@id/jihoon_lee_character_view"
+        android:contentDescription="@string/platform"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/platform"
+        app:layout_constraintStart_toStartOf="@id/yoojin_character_view"
+        app:layout_constraintEnd_toEndOf="@id/yoojin_character_view"
+        app:layout_constraintBottom_toBottomOf="@id/yoojin_character_view"
+        android:contentDescription="@string/platform"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/platform"
+        app:layout_constraintStart_toStartOf="@id/changwoo_character_view"
+        app:layout_constraintEnd_toEndOf="@id/changwoo_character_view"
+        app:layout_constraintBottom_toBottomOf="@id/changwoo_character_view"
+        android:contentDescription="@string/platform"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/platform"
+        app:layout_constraintStart_toStartOf="@id/juyeon_character_view"
+        app:layout_constraintEnd_toEndOf="@id/juyeon_character_view"
+        app:layout_constraintBottom_toBottomOf="@id/juyeon_character_view"
+        android:contentDescription="@string/platform"/>
+
+    <!-- 플랫폼 뷰 -->
+
     <com.pl.presentation.custom.CharacterView
         android:id="@+id/jihoon_ock_character_view"
         android:layout_width="180dp"

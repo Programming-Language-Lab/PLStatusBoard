@@ -19,5 +19,6 @@
     <string name="status_home">귀가</string>
     <string name="state">상태</string>
     <string name="background">배경</string>
+    <string name="platform">플랫폼</string>
 
 </resources>
