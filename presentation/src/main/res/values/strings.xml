@@ -18,5 +18,6 @@
     <string name="status_class">수업</string>
     <string name="status_home">귀가</string>
     <string name="state">상태</string>
+    <string name="background">배경</string>
 
 </resources>
