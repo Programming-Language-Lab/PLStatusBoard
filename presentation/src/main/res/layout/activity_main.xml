@@ -22,82 +22,101 @@
 
     <!-- 플랫폼 뷰 -->
     <ImageView
+        android:id="@+id/dojin_platform"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/platform"
         android:src="@drawable/platform"
+        app:layout_constraintTop_toBottomOf="@id/dojin_character_view"
         app:layout_constraintBottom_toBottomOf="@id/dojin_character_view"
         app:layout_constraintEnd_toEndOf="@id/dojin_character_view"
         app:layout_constraintStart_toStartOf="@id/dojin_character_view" />
 
     <ImageView
+        android:id="@+id/goeun_platform"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/platform"
         android:src="@drawable/platform"
+        app:layout_constraintTop_toBottomOf="@id/goeun_character_view"
         app:layout_constraintBottom_toBottomOf="@id/goeun_character_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
+        android:id="@+id/jihoon_ock_platform"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/platform"
         android:src="@drawable/platform"
+        app:layout_constraintTop_toBottomOf="@id/jihoon_ock_character_view"
         app:layout_constraintBottom_toBottomOf="@id/jihoon_ock_character_view"
         app:layout_constraintEnd_toEndOf="@id/jihoon_ock_character_view"
         app:layout_constraintStart_toStartOf="@id/jihoon_ock_character_view" />
 
     <ImageView
+        android:id="@+id/haesung_platform"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/platform"
         android:src="@drawable/platform"
+        app:layout_constraintTop_toBottomOf="@id/haesung_character_view"
         app:layout_constraintBottom_toBottomOf="@id/haesung_character_view"
         app:layout_constraintEnd_toEndOf="@id/haesung_character_view"
         app:layout_constraintStart_toStartOf="@id/haesung_character_view" />
 
     <ImageView
+        android:id="@+id/hyunsoo_platform"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/platform"
         android:src="@drawable/platform"
+        android:layout_marginTop="-100dp"
+        app:layout_constraintTop_toBottomOf="@id/hyunsoo_character_view"
         app:layout_constraintBottom_toBottomOf="@id/hyunsoo_character_view"
         app:layout_constraintEnd_toEndOf="@id/hyunsoo_character_view"
         app:layout_constraintStart_toStartOf="@id/hyunsoo_character_view" />
 
     <ImageView
+        android:id="@+id/jihoon_lee_platform"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/platform"
         android:src="@drawable/platform"
+        app:layout_constraintTop_toBottomOf="@id/jihoon_lee_character_view"
         app:layout_constraintBottom_toBottomOf="@id/jihoon_lee_character_view"
         app:layout_constraintEnd_toEndOf="@id/jihoon_lee_character_view"
         app:layout_constraintStart_toStartOf="@id/jihoon_lee_character_view" />
 
     <ImageView
+        android:id="@+id/yoojin_platform"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/platform"
         android:src="@drawable/platform"
+        app:layout_constraintTop_toBottomOf="@id/yoojin_character_view"
         app:layout_constraintBottom_toBottomOf="@id/yoojin_character_view"
         app:layout_constraintEnd_toEndOf="@id/yoojin_character_view"
         app:layout_constraintStart_toStartOf="@id/yoojin_character_view" />
 
     <ImageView
+        android:id="@+id/changwoo_platform"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/platform"
         android:src="@drawable/platform"
+        app:layout_constraintTop_toBottomOf="@id/changwoo_character_view"
         app:layout_constraintBottom_toBottomOf="@id/changwoo_character_view"
         app:layout_constraintEnd_toEndOf="@id/changwoo_character_view"
         app:layout_constraintStart_toStartOf="@id/changwoo_character_view" />
 
     <ImageView
+        android:id="@+id/juyeon_platform"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/platform"
         android:src="@drawable/platform"
+        app:layout_constraintTop_toBottomOf="@id/juyeon_character_view"
         app:layout_constraintBottom_toBottomOf="@id/juyeon_character_view"
         app:layout_constraintEnd_toEndOf="@id/juyeon_character_view"
         app:layout_constraintStart_toStartOf="@id/juyeon_character_view" />
@@ -106,8 +125,8 @@
     <!-- 캐릭터 뷰 -->
     <com.pl.presentation.custom.CharacterView
         android:id="@+id/jihoon_ock_character_view"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_marginTop="120dp"
         android:src="@drawable/jihoon_ock"
         android:translationZ="1dp"
@@ -126,7 +145,7 @@
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="@id/jihoon_ock_character_view"
         app:layout_constraintStart_toStartOf="@id/jihoon_ock_character_view"
-        app:layout_constraintTop_toBottomOf="@id/jihoon_ock_character_view" />
+        app:layout_constraintTop_toBottomOf="@id/jihoon_ock_platform" />
 
     <ImageView
         android:id="@+id/jihoon_ock_state"
@@ -141,8 +160,8 @@
 
     <com.pl.presentation.custom.CharacterView
         android:id="@+id/goeun_character_view"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_marginTop="120dp"
         android:src="@drawable/goeun"
         android:translationZ="1dp"
@@ -171,13 +190,13 @@
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="@id/goeun_character_view"
         app:layout_constraintStart_toStartOf="@id/goeun_character_view"
-        app:layout_constraintTop_toBottomOf="@id/goeun_character_view" />
+        app:layout_constraintTop_toBottomOf="@id/goeun_platform" />
 
 
     <com.pl.presentation.custom.CharacterView
         android:id="@+id/dojin_character_view"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_marginTop="120dp"
         android:src="@drawable/dojin"
         android:translationZ="1dp"
@@ -196,7 +215,7 @@
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="@id/dojin_character_view"
         app:layout_constraintStart_toStartOf="@id/dojin_character_view"
-        app:layout_constraintTop_toBottomOf="@id/dojin_character_view" />
+        app:layout_constraintTop_toBottomOf="@id/dojin_platform" />
 
     <ImageView
         android:id="@+id/dojin_state"
@@ -210,8 +229,8 @@
 
     <com.pl.presentation.custom.CharacterView
         android:id="@+id/jihoon_lee_character_view"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_marginTop="120dp"
         android:src="@drawable/jihoon_lee"
         android:translationZ="1dp"
@@ -230,7 +249,7 @@
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="@id/jihoon_lee_character_view"
         app:layout_constraintStart_toStartOf="@id/jihoon_lee_character_view"
-        app:layout_constraintTop_toBottomOf="@id/jihoon_lee_character_view" />
+        app:layout_constraintTop_toBottomOf="@id/jihoon_lee_platform" />
 
     <ImageView
         android:id="@+id/jihoon_lee_state"
@@ -245,8 +264,8 @@
 
     <com.pl.presentation.custom.CharacterView
         android:id="@+id/hyunsoo_character_view"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_marginTop="120dp"
         android:src="@drawable/hyunsoo"
         android:translationZ="1dp"
@@ -265,7 +284,7 @@
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="@id/hyunsoo_character_view"
         app:layout_constraintStart_toStartOf="@id/hyunsoo_character_view"
-        app:layout_constraintTop_toBottomOf="@id/hyunsoo_character_view" />
+        app:layout_constraintTop_toBottomOf="@id/hyunsoo_platform" />
 
     <ImageView
         android:id="@+id/hyunsoo_state"
@@ -279,8 +298,8 @@
 
     <com.pl.presentation.custom.CharacterView
         android:id="@+id/haesung_character_view"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_marginTop="120dp"
         android:src="@drawable/haesung"
         android:translationZ="1dp"
@@ -299,7 +318,7 @@
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="@id/haesung_character_view"
         app:layout_constraintStart_toStartOf="@id/haesung_character_view"
-        app:layout_constraintTop_toBottomOf="@id/haesung_character_view" />
+        app:layout_constraintTop_toBottomOf="@id/haesung_platform" />
 
     <ImageView
         android:id="@+id/haesung_state"
@@ -314,8 +333,8 @@
 
     <com.pl.presentation.custom.CharacterView
         android:id="@+id/juyeon_character_view"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_marginTop="120dp"
         android:src="@drawable/juyeon"
         android:translationZ="1dp"
@@ -334,7 +353,7 @@
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="@id/juyeon_character_view"
         app:layout_constraintStart_toStartOf="@id/juyeon_character_view"
-        app:layout_constraintTop_toBottomOf="@id/juyeon_character_view" />
+        app:layout_constraintTop_toBottomOf="@id/juyeon_platform" />
 
     <ImageView
         android:id="@+id/juyeon_state"
@@ -348,8 +367,8 @@
 
     <com.pl.presentation.custom.CharacterView
         android:id="@+id/changwoo_character_view"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_marginTop="120dp"
         android:src="@drawable/changwoo"
         android:translationZ="1dp"
@@ -368,7 +387,7 @@
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="@id/changwoo_character_view"
         app:layout_constraintStart_toStartOf="@id/changwoo_character_view"
-        app:layout_constraintTop_toBottomOf="@id/changwoo_character_view" />
+        app:layout_constraintTop_toBottomOf="@id/changwoo_platform" />
 
     <ImageView
         android:id="@+id/changwoo_state"
@@ -382,8 +401,8 @@
 
     <com.pl.presentation.custom.CharacterView
         android:id="@+id/yoojin_character_view"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_marginTop="120dp"
         android:src="@drawable/yoojin"
         android:translationZ="1dp"
@@ -402,7 +421,7 @@
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="@id/yoojin_character_view"
         app:layout_constraintStart_toStartOf="@id/yoojin_character_view"
-        app:layout_constraintTop_toBottomOf="@id/yoojin_character_view" />
+        app:layout_constraintTop_toBottomOf="@id/yoojin_platform" />
 
     <ImageView
         android:id="@+id/yoojin_state"
