@@ -5,6 +5,7 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
+import com.pl.domain.MemberStatus
 import kotlinx.coroutines.launch
 
 data class Rectangle(val x1: Float, val y1: Float, val x2: Float, val y2: Float) {
@@ -50,5 +51,14 @@ fun LifecycleOwner.repeatWhenUiStarted(block: suspend () -> Unit) {
         repeatOnLifecycle(Lifecycle.State.STARTED) {
             block.invoke()
         }
+    }
+}
+
+fun MemberStatus.toResource(): Int {
+    return when(this) {
+        MemberStatus.IN -> R.drawable.in_img
+        MemberStatus.OUT -> R.drawable.out_img
+        MemberStatus.CLASS -> R.drawable.class_img
+        else -> R.drawable.home_img
     }
 }
