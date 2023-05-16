@@ -75,55 +75,82 @@ class MainActivity : AppCompatActivity() {
 
         repeatWhenUiStarted {
             viewModel.jihoonOck.collect {
-                binding.jihoonOckState.setBackgroundResource(it.status.toResource())
+                with(binding) {
+                    jihoonOckFireworkLottie.playAnimation()
+                    jihoonOckState.setBackgroundResource(it.status.toResource())
+                }
             }
         }
 
         repeatWhenUiStarted {
             viewModel.goeun.collect {
-                binding.goeunState.setBackgroundResource(it.status.toResource())
+                with(binding) {
+                    goeunFireworkLottie.playAnimation()
+                    goeunState.setBackgroundResource(it.status.toResource())
+                }
             }
         }
 
         repeatWhenUiStarted {
             viewModel.dojin.collect {
-                binding.dojinState.setBackgroundResource(it.status.toResource())
+                with(binding) {
+                    dojinFireworkLottie.playAnimation()
+                    dojinState.setBackgroundResource(it.status.toResource())
+                }
             }
         }
 
         repeatWhenUiStarted {
             viewModel.jihoonLee.collect {
-                binding.jihoonLeeState.setBackgroundResource(it.status.toResource())
+                with(binding) {
+                    jihoonLeeFireworkLottie.playAnimation()
+                    jihoonLeeState.setBackgroundResource(it.status.toResource())
+                }
             }
         }
 
         repeatWhenUiStarted {
             viewModel.hyunsoo.collect {
-                binding.hyunsooState.setBackgroundResource(it.status.toResource())
+                with(binding) {
+                    hyunsooFireworkLottie.playAnimation()
+                    hyunsooState.setBackgroundResource(it.status.toResource())
+                }
             }
         }
 
         repeatWhenUiStarted {
             viewModel.haesung.collect {
-                binding.haesungState.setBackgroundResource(it.status.toResource())
+                with(binding) {
+                    haesungFireworkLottie.playAnimation()
+                    haesungState.setBackgroundResource(it.status.toResource())
+                }
             }
         }
 
         repeatWhenUiStarted {
             viewModel.juyeon.collect {
-                binding.juyeonState.setBackgroundResource(it.status.toResource())
+                with(binding) {
+                    juyeonFireworkLottie.playAnimation()
+                    juyeonState.setBackgroundResource(it.status.toResource())
+                }
             }
         }
 
         repeatWhenUiStarted {
             viewModel.changwoo.collect {
-                binding.changwooState.setBackgroundResource(it.status.toResource())
+                with(binding) {
+                    changwooFireworkLottie.playAnimation()
+                    changwooState.setBackgroundResource(it.status.toResource())
+                }
             }
         }
 
         repeatWhenUiStarted {
             viewModel.yoojin.collect {
-                binding.yoojinState.setBackgroundResource(it.status.toResource())
+                with(binding) {
+                    yoojinFireworkLottie.playAnimation()
+                    yoojinState.setBackgroundResource(it.status.toResource())
+                }
             }
         }
 

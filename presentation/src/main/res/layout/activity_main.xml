@@ -524,4 +524,96 @@
     </LinearLayout>
     <!-- 상태 뷰-->
 
+    <!-- 폭죽 로티 -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/jihoon_ock_firework_lottie"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:layout_constraintStart_toStartOf="@id/jihoon_ock_character_view"
+        app:layout_constraintEnd_toEndOf="@id/jihoon_ock_character_view"
+        app:layout_constraintTop_toTopOf="@id/jihoon_ock_character_view"
+        app:layout_constraintBottom_toBottomOf="@id/jihoon_ock_character_view"
+        app:lottie_rawRes="@raw/firework_lottie" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/goeun_firework_lottie"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:layout_constraintStart_toStartOf="@id/goeun_character_view"
+        app:layout_constraintEnd_toEndOf="@id/goeun_character_view"
+        app:layout_constraintTop_toTopOf="@id/goeun_character_view"
+        app:layout_constraintBottom_toBottomOf="@id/goeun_character_view"
+        app:lottie_rawRes="@raw/firework_lottie" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/dojin_firework_lottie"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:layout_constraintStart_toStartOf="@id/dojin_character_view"
+        app:layout_constraintEnd_toEndOf="@id/dojin_character_view"
+        app:layout_constraintTop_toTopOf="@id/dojin_character_view"
+        app:layout_constraintBottom_toBottomOf="@id/dojin_character_view"
+        app:lottie_rawRes="@raw/firework_lottie" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/jihoon_lee_firework_lottie"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:layout_constraintStart_toStartOf="@id/jihoon_lee_character_view"
+        app:layout_constraintEnd_toEndOf="@id/jihoon_lee_character_view"
+        app:layout_constraintTop_toTopOf="@id/jihoon_lee_character_view"
+        app:layout_constraintBottom_toBottomOf="@id/jihoon_lee_character_view"
+        app:lottie_rawRes="@raw/firework_lottie" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/hyunsoo_firework_lottie"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:layout_constraintStart_toStartOf="@id/hyunsoo_character_view"
+        app:layout_constraintEnd_toEndOf="@id/hyunsoo_character_view"
+        app:layout_constraintTop_toTopOf="@id/hyunsoo_character_view"
+        app:layout_constraintBottom_toBottomOf="@id/hyunsoo_character_view"
+        app:lottie_rawRes="@raw/firework_lottie" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/haesung_firework_lottie"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:layout_constraintStart_toStartOf="@id/haesung_character_view"
+        app:layout_constraintEnd_toEndOf="@id/haesung_character_view"
+        app:layout_constraintTop_toTopOf="@id/haesung_character_view"
+        app:layout_constraintBottom_toBottomOf="@id/haesung_character_view"
+        app:lottie_rawRes="@raw/firework_lottie" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/juyeon_firework_lottie"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:layout_constraintStart_toStartOf="@id/juyeon_character_view"
+        app:layout_constraintEnd_toEndOf="@id/juyeon_character_view"
+        app:layout_constraintTop_toTopOf="@id/juyeon_character_view"
+        app:layout_constraintBottom_toBottomOf="@id/juyeon_character_view"
+        app:lottie_rawRes="@raw/firework_lottie" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/changwoo_firework_lottie"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:layout_constraintStart_toStartOf="@id/changwoo_character_view"
+        app:layout_constraintEnd_toEndOf="@id/changwoo_character_view"
+        app:layout_constraintTop_toTopOf="@id/changwoo_character_view"
+        app:layout_constraintBottom_toBottomOf="@id/changwoo_character_view"
+        app:lottie_rawRes="@raw/firework_lottie" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/yoojin_firework_lottie"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:layout_constraintStart_toStartOf="@id/yoojin_character_view"
+        app:layout_constraintEnd_toEndOf="@id/yoojin_character_view"
+        app:layout_constraintTop_toTopOf="@id/yoojin_character_view"
+        app:layout_constraintBottom_toBottomOf="@id/yoojin_character_view"
+        app:lottie_rawRes="@raw/firework_lottie" />
+    <!-- 폭죽 로티 -->
+
 </androidx.constraintlayout.widget.ConstraintLayout>
