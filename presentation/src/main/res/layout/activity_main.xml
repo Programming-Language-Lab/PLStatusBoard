@@ -22,15 +22,15 @@
 
     <!-- 플랫폼 뷰 -->
     <ImageView
-        android:id="@+id/dojin_platform"
+        android:id="@+id/seoyeon_platform"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/platform"
         android:src="@drawable/platform"
-        app:layout_constraintTop_toBottomOf="@id/dojin_character_view"
-        app:layout_constraintBottom_toBottomOf="@id/dojin_character_view"
-        app:layout_constraintEnd_toEndOf="@id/dojin_character_view"
-        app:layout_constraintStart_toStartOf="@id/dojin_character_view" />
+        app:layout_constraintTop_toBottomOf="@id/seoyeon_character_view"
+        app:layout_constraintBottom_toBottomOf="@id/seoyeon_character_view"
+        app:layout_constraintEnd_toEndOf="@id/seoyeon_character_view"
+        app:layout_constraintStart_toStartOf="@id/seoyeon_character_view" />
 
     <ImageView
         android:id="@+id/goeun_platform"
@@ -166,7 +166,7 @@
         android:src="@drawable/goeun"
         android:translationZ="1dp"
         app:characterName="@string/goeun"
-        app:layout_constraintEnd_toEndOf="@id/dojin_character_view"
+        app:layout_constraintEnd_toEndOf="@id/seoyeon_character_view"
         app:layout_constraintStart_toStartOf="@id/jihoon_ock_character_view"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -194,38 +194,38 @@
 
 
     <com.pl.presentation.custom.CharacterView
-        android:id="@+id/dojin_character_view"
+        android:id="@+id/seoyeon_character_view"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginTop="120dp"
-        android:src="@drawable/dojin"
+        android:src="@drawable/seoyeon"
         android:translationZ="1dp"
-        app:characterName="@string/dojin"
+        app:characterName="@string/seoyeon"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/goeun_character_view"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/dojin_name"
+        android:id="@+id/seoyeon_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/dojin"
+        android:text="@string/seoyeon"
         android:fontFamily="@font/bit_bit"
         android:textColor="@color/black"
         android:textSize="25sp"
-        app:layout_constraintEnd_toEndOf="@id/dojin_character_view"
-        app:layout_constraintStart_toStartOf="@id/dojin_character_view"
-        app:layout_constraintTop_toBottomOf="@id/dojin_platform" />
+        app:layout_constraintEnd_toEndOf="@id/seoyeon_character_view"
+        app:layout_constraintStart_toStartOf="@id/seoyeon_character_view"
+        app:layout_constraintTop_toBottomOf="@id/seoyeon_platform" />
 
     <ImageView
-        android:id="@+id/dojin_state"
+        android:id="@+id/seoyeon_state"
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_marginStart="5dp"
         android:contentDescription="@string/state_icon"
-        app:layout_constraintBottom_toBottomOf="@id/dojin_name"
-        app:layout_constraintStart_toEndOf="@id/dojin_name"
-        app:layout_constraintTop_toTopOf="@id/dojin_name" />
+        app:layout_constraintBottom_toBottomOf="@id/seoyeon_name"
+        app:layout_constraintStart_toEndOf="@id/seoyeon_name"
+        app:layout_constraintTop_toTopOf="@id/seoyeon_name" />
 
     <com.pl.presentation.custom.CharacterView
         android:id="@+id/jihoon_lee_character_view"
@@ -270,7 +270,7 @@
         android:src="@drawable/hyunsoo"
         android:translationZ="1dp"
         app:characterName="@string/hyunsoo"
-        app:layout_constraintEnd_toEndOf="@id/dojin_character_view"
+        app:layout_constraintEnd_toEndOf="@id/seoyeon_character_view"
         app:layout_constraintStart_toStartOf="@id/jihoon_lee_character_view"
         app:layout_constraintTop_toBottomOf="@id/jihoon_ock_name" />
 
@@ -373,7 +373,7 @@
         android:src="@drawable/changwoo"
         android:translationZ="1dp"
         app:characterName="@string/changwoo"
-        app:layout_constraintEnd_toEndOf="@id/dojin_character_view"
+        app:layout_constraintEnd_toEndOf="@id/seoyeon_character_view"
         app:layout_constraintStart_toStartOf="@id/jihoon_lee_character_view"
         app:layout_constraintTop_toBottomOf="@id/jihoon_lee_name" />
 
@@ -565,13 +565,13 @@
         app:lottie_rawRes="@raw/firework_lottie" />
 
     <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/dojin_firework_lottie"
+        android:id="@+id/seoyeon_firework_lottie"
         android:layout_width="250dp"
         android:layout_height="250dp"
-        app:layout_constraintStart_toStartOf="@id/dojin_character_view"
-        app:layout_constraintEnd_toEndOf="@id/dojin_character_view"
-        app:layout_constraintTop_toTopOf="@id/dojin_character_view"
-        app:layout_constraintBottom_toBottomOf="@id/dojin_character_view"
+        app:layout_constraintStart_toStartOf="@id/seoyeon_character_view"
+        app:layout_constraintEnd_toEndOf="@id/seoyeon_character_view"
+        app:layout_constraintTop_toTopOf="@id/seoyeon_character_view"
+        app:layout_constraintBottom_toBottomOf="@id/seoyeon_character_view"
         app:lottie_rawRes="@raw/firework_lottie" />
 
     <com.airbnb.lottie.LottieAnimationView

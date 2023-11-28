@@ -3,12 +3,13 @@ package com.pl.domain
 enum class MemberInfo(val ko: String, val en: String) {
     JIHOON_OCK("옥지훈", "jihoonOck"),
     GOEUN("고은", "goeun"),
-    DOJIN("도진", "dojin"),
+//    DOJIN("도진", "dojin"),
     JIHOON_LEE("이지훈", "jihoonLee"),
     HYUNSOO("현수", "hyunsoo"),
     HAESUNG("혜성", "haesung"),
     JUYEON("주연", "juyeon"),
     CHANGWOO("창우", "changwoo"),
+    SEOYEON("서연", "seoyeon"),
     YOOJIN("유진", "yoojin");
 
     companion object {

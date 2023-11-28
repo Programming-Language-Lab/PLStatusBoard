@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
 
         val jihoonOckCharacterView = binding.jihoonOckCharacterView
         val goeunCharacterView = binding.goeunCharacterView
-        val dojinCharacterView = binding.dojinCharacterView
+        val seoyeonCharacterView = binding.seoyeonCharacterView
         val jihoonLeeCharacterView = binding.jihoonLeeCharacterView
         val hyunsooCharacterView = binding.hyunsooCharacterView
         val haesungCharacterView = binding.haesungCharacterView
@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
         val characterViews = listOf(
             jihoonOckCharacterView,
             goeunCharacterView,
-            dojinCharacterView,
+            seoyeonCharacterView,
             jihoonLeeCharacterView,
             hyunsooCharacterView,
             haesungCharacterView,
@@ -92,10 +92,10 @@ class MainActivity : AppCompatActivity() {
         }
 
         repeatWhenUiStarted {
-            viewModel.dojin.collect {
+            viewModel.seoyeon.collect {
                 with(binding) {
-                    dojinFireworkLottie.playAnimation()
-                    dojinState.setBackgroundResource(it.status.toResource())
+                    seoyeonFireworkLottie.playAnimation()
+                    seoyeonState.setBackgroundResource(it.status.toResource())
                 }
             }
         }

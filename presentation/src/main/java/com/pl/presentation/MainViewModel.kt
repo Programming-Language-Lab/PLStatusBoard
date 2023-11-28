@@ -61,9 +61,9 @@ class MainViewModel @Inject constructor(
     val goeun: StateFlow<MemberState>
         get() = _goeun
 
-    private var _dojin: MutableStateFlow<MemberState> = MutableStateFlow(MemberState.init("도진"))
-    val dojin: StateFlow<MemberState>
-        get() = _dojin
+    private var _seoyeon: MutableStateFlow<MemberState> = MutableStateFlow(MemberState.init("서연"))
+    val seoyeon: StateFlow<MemberState>
+        get() = _seoyeon
 
     private var _jihoonLee: MutableStateFlow<MemberState> =
         MutableStateFlow(MemberState.init("이지훈"))
@@ -102,7 +102,7 @@ class MainViewModel @Inject constructor(
         when (memberState.name) {
             MemberInfo.JIHOON_OCK.ko -> setJihoonOckMemberState(memberState.status)
             MemberInfo.GOEUN.ko -> setGoeunMemberState(memberState.status)
-            MemberInfo.DOJIN.ko -> setDojinMemberState(memberState.status)
+            MemberInfo.SEOYEON.ko -> setSeoyeonMemberState(memberState.status)
             MemberInfo.JIHOON_LEE.ko -> setJihoonLeeMemberState(memberState.status)
             MemberInfo.HYUNSOO.ko -> setHyunsooMemberState(memberState.status)
             MemberInfo.HAESUNG.ko -> setHaesungMemberState(memberState.status)
@@ -120,8 +120,8 @@ class MainViewModel @Inject constructor(
         _goeun.value = _goeun.value.copy(status = memberStatus)
     }
 
-    private fun setDojinMemberState(memberStatus: MemberStatus) {
-        _dojin.value = _dojin.value.copy(status = memberStatus)
+    private fun setSeoyeonMemberState(memberStatus: MemberStatus) {
+        _seoyeon.value = _seoyeon.value.copy(status = memberStatus)
     }
 
     private fun setJihoonLeeMemberState(memberStatus: MemberStatus) {
